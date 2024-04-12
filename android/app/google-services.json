@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "273448422043",
+    "project_id": "crud1-flutter",
+    "storage_bucket": "crud1-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273448422043:android:efa3cd5686bd43cf80d43e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_fb_crud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9tcLBnTy-I80SDi58KuVgN_q_mjFlzwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
