@@ -17,4 +17,14 @@ class FirestoreService{
       return notesStream;
   }
 
+  //update Notes
+
+  Future<void> UpdateNote(String docID, String newNote){
+    return notes.doc(docID).update({
+      'note':newNote,
+      'timestamp':Timestamp.now(),
+      }
+    );
+
+  }
 }
