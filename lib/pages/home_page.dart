@@ -8,16 +8,26 @@ class HomePage extends StatefulWidget{
 }
 
 class _HomePageState extends State<HomePage> {
+
+  final TextEditingController textController = TextEditingController();
   void OpenNoteBox(){
-    showDialog(context: context, builder: (context) => AlertDialog(
-      content: TextField(),
+    showDialog(context: context,
+     builder: (context) => AlertDialog(
+      content: TextField(
+        controller: textController,
+      ),
+      actions: [
+        ElevatedButton(onPressed: () {}, 
+        child: Text("Add")),
+      ],
+
     ));
   }
 
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(title: Text("Notes"),),
-      floatingActionButton: FloatingActionButton(onPressed: () => {},
+      floatingActionButton: FloatingActionButton(onPressed: OpenNoteBox,
       child: const Icon(Icons.add),),
     );
   }
