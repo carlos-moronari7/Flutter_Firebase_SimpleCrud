@@ -68,11 +68,20 @@ class _HomePageState extends State<HomePage> {
 
             return ListTile(
               title: Text(noteText),
-              trailing: IconButton(
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                  children: [
+                 IconButton(
                 onPressed:() => OpenNoteBox(docID: docID),
                 icon: const Icon(Icons.settings),
                 
               ),
+                IconButton(
+                onPressed:() => firestoreService.DeleteNote(docID),
+                icon: const Icon(Icons.delete),
+                
+              ),
+              ],)
             );
           },);
         }else{
